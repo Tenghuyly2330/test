@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar button{
+    background-color: #fff;
+}
+
+.bg-section{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.section-padding{
+    padding: 50px 200px;
+}
+.coffee-padding{
+    padding: 200px 200px;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.3) ;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.navbar-nav .active{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-nav .active::before{
+    position: absolute;
+    width: 90%;
+    height: 3px;
+}
+.navbar-nav a{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+}
+
+.navbar-nav a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.5s;
+}
+
+.navbar-nav a:hover:before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: #fff;
+    left: 0;
+    bottom: 5px;
+}
+
+/* home */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home .home-text{
+    position: absolute;
+    width: 100%;
+    left: 10%;
+    top: 20%;
+    color: #fff;
+}
+.home .home-text h6{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.home .home-text h3{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: 2px;
+}
+.home .home-text .btn{
+    margin-top: 20px;
+    background-color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 8px 50px;
+    border-radius: 30px;
+}
+
+/* about */
+.about-video{
+    width: 100%;
+    height: 350px;
+    background-image: url('img/video-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+.about .img-icon{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+
+.about-video::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.about-text{
+    padding-left: 10% !important;
+}
+
+.about-text .p{
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: orange;
+}
+
+.about-text h4{
+    margin-top: -20px;
+    font-size:35px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.about-text .p1{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.about-text span{
+    font-size: 12px;
+}
+
+/* coffee */
+
+.coffee .card{
+    box-shadow: 4px 4px 15px 0px rgba(203, 183, 111, 0.75);
+    margin-top: 20px;
+}
+.coffee h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.coffee span{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(203, 183, 111, 0.75);
+}
+
+/* rating */
+.rating {
+    background-color: rgb(158, 127, 70);
+    color: #fff;
+}
+
+.rating-icon i{
+    font-size: 15px;
+    color: gold;
+}
+
+.rating-item p{
+    font-size: 60px;
+    font-weight: 200 ;
+}
+.rating-item span{
+    position: absolute;
+    margin-top: -30px !important;
+    font-size: 14px;
+}
+
+/* blog */
+.blog .card{
+    border: none;
+}
+
+.blog .btn{
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.5s ;
+}
+.blog .btn:hover{
+    background-color: rgb(158, 127, 70);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.blog h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blog p{
+    font-size: 15px;
+}
+
+.blog span{
+    font-size: 16;
+    font-weight: 500;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/footer-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+footer .row{
+    padding: 200px 180px;
+}
+footer h4{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+footer p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer input{
+    width: 300px;
+    border-left: none !important;
+    border-radius: 5px;
+}
+footer button{
+    background-color: orange !important;
+}
+
+
+
+
+/* responsive */
+
+@media (max-width: 770px) {
+    .about .about-text{
+        margin-top: 20px;
+    }
+    footer .row{
+        padding: 200px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-padding{
+        padding: 20px 20px;
+    }
+    .coffee-padding{
+        padding: 20px 20px;
+    }
+    .review img{
+        width: 100%;
+    }
+    .review .col-lg-8{
+        margin-top: 30px;
+    }
+    .rating{
+        padding: 100px 100px;
+    }
+
+    .blog .card{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
